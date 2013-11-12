@@ -1,6 +1,6 @@
-angular.module('example-app', ['notice']);
+angular.module('example-app', ['ftNotice']);
 
-var MainController = function($scope, notice) {
+var MainController = function($scope, ftNotice) {
   $scope.message = 'Shown message';
   $scope.type = 'info';
   $scope.isSticky = false;
@@ -27,10 +27,10 @@ var MainController = function($scope, notice) {
   $scope.show = function(){
     var method = $scope.isSticky ? 'showSticky' : 'show';
 
-    notice[method]($scope.message,$scope.type);
+    ftNotice[method]($scope.message,$scope.type);
   };
 
   $scope.hide = function(){
-    notice.hide();
+    ftNotice.hide();
   };
 };

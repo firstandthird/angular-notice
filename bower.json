@@ -1,0 +1,26 @@
+{
+  "name": "angular-notice",
+  "description": "Angular lib for notice",
+  "version": "0.1.0",
+  "homepage": "https://github.com/firstandthird/angular-notice",
+  "license": "MIT",
+  "copyright": "First + Third",
+  "main": "dist/angular-notice.js",
+  "dependencies": {
+    "jquery": "~1.10.0",
+    "angular": "~1.0.7"
+  },
+  "devDependencies": {
+    "assert": "*",
+    "blanket": "*"
+  },
+  "ignore": [
+    "test",
+    "example",
+    "grunt",
+    "lib",
+    "Gruntfile.js",
+    "package.json",
+    "grunt"
+  ]
+}

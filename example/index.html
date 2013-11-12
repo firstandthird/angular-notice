@@ -3,12 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <title>angular-notice example</title>
-    <script src="../components/angular/angular.js"></script>
+    <script src="../bower_components/jquery/jquery.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/notice/dist/notice.js"></script>
     <script src="../dist/angular-notice.js"></script>
     <script src="app.js"></script>
+    <style>
+      label {
+        display: block;
+        margin: 10px 0;
+      }
+    </style>
   </head>
   <body>
     <div ng-controller="MainController">
+      <label>Message: <input type="text" ng-model="message"/></label>
+      <label>Level: <select ng-model="type"
+              ng-options="availableLevels.value as availableLevels.name for availableLevels in availableLevels"></select></label>
+      <label>Is Sticky?: <input type="checkbox" ng-model="isSticky"/></label>
+      <button ng-click="show()">Show notice</button>
+      <button ng-click="hide()">Hide notice</button>
     </div>
   </body>
 </html>

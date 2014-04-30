@@ -1,4 +1,4 @@
-angular.module('example-app', ['ftNotice']);
+var app = angular.module('example-app', ['ftNotice']);
 
 var MainController = function($scope, ftNotice) {
   $scope.message = 'Shown message';

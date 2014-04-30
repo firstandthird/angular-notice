@@ -5,11 +5,10 @@
   "homepage": "https://github.com/firstandthird/angular-notice",
   "license": "MIT",
   "copyright": "First + Third",
-  "main": "dist/angular-notice.js",
+  "main": "dist/angular.angular-notice.bower.js",
   "dependencies": {
-    "jquery": "~1.10.0",
-    "angular": "~1.2.0",
-    "notice" : "~0.4.0"
+    "angular": "~1.3.x",
+    "jquery": "*"
   },
   "devDependencies": {
     "assert": "*",
@@ -18,7 +17,6 @@
   "ignore": [
     "test",
     "example",
-    "grunt",
     "lib",
     "Gruntfile.js",
     "package.json",

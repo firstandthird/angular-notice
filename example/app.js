@@ -1,5 +1,11 @@
 var app = angular.module('example-app', ['ftNotice']);
 
+app.config(function(ftNoticeProvider){
+  ftNoticeProvider.setDefaults({
+    offsetTop: 100
+  });
+});
+
 var MainController = function($scope, ftNotice) {
   $scope.message = 'Shown message';
   $scope.type = 'info';

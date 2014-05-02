@@ -1,12 +1,12 @@
 var app = angular.module('example-app', ['ftNotice']);
 
-app.config(function(ftNoticeProvider){
-  ftNoticeProvider.setDefaults({
+app.config(function(noticeProvider){
+  noticeProvider.setDefaults({
     offsetTop: 100
   });
 });
 
-var MainController = function($scope, ftNotice) {
+var MainController = function($scope, notice) {
   $scope.message = 'Shown message';
   $scope.type = 'info';
   $scope.isSticky = false;
@@ -33,10 +33,10 @@ var MainController = function($scope, ftNotice) {
   $scope.show = function(){
     var method = $scope.isSticky ? 'showSticky' : 'show';
 
-    ftNotice[method]($scope.message,$scope.type);
+    notice[method]($scope.message,$scope.type);
   };
 
   $scope.hide = function(){
-    ftNotice.hide();
+    notice.hide();
   };
 };
